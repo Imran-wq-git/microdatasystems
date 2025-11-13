@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  color:red;
+  background-color: #022446;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button{
+  background: red;
+  color: white;
+  height: 30px;
+  width: 100px;
+  margin-left: 1350px;
+  border-radius: 4px;
+}
+
+button:hover{
+  background-color: tomato;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #0d1b2a;
+  padding: 1rem 2rem;
+  color: #ffffff;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Navigation links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #00aaff;
+}
+
+/* Action buttons */
+.navbar-actions .btn-login {
+  background-color: #00aaff;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-actions .btn-login:hover {
+  background-color: #0088cc;
+}
+
+.imgmds{
+  border-radius: 50%;
+  height: 70px;
+}
+
+.imgmds:hover {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
